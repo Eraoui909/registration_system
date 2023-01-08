@@ -1,4 +1,15 @@
 server:
   port: 8081
+  error:
+    include-binding-errors: always
+    include-message: always
 
-spring
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/registration_system
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
